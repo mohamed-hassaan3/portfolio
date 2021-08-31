@@ -1,0 +1,123 @@
+.navigator .c {
+    color: var(--contact-color)
+}
+.contact {
+    width: 70%;
+    border: 1px solid #eee;
+    background-color: transparent;
+    box-shadow: 1px 1px 8px #999;
+    margin: 64px auto;
+    text-align: center;
+}
+.contact h2 {
+    margin: 32px 0;
+    font-family: 'Baskervville', serif;
+    font-weight: 900;
+    font-size: 3rem;
+    letter-spacing: 2px;
+}
+.address {
+    font-family: 'Georama', sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+.address p {
+    line-height: 2;
+    color: #333;
+    font-weight: 600;
+}
+.info a {
+    line-height: 2;
+    text-decoration: none;
+    color: #333;
+    font-weight: 400;
+    transition: all .4s;
+}
+.info {
+    padding-top: 32px;
+}
+.info a:hover {
+    color: #000;
+}
+.form {
+    margin: 64px auto;
+    width: 100%;
+}
+.form>div {
+    padding: 12px 0;
+}
+.form label {
+    display: block;
+    padding-bottom: 6px;
+    font-family: 'Baskervville', serif;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.form input, textarea {
+    padding: 16px 12px;
+    width: 60%;
+    border: none;
+    border-bottom: 1px solid #777;
+    border-radius: 5px;
+    box-shadow: 5px 5px 8px #999;
+    background-color:#eee;
+}
+.write-some {
+    display: block;
+    font-family: 'Baskervville', serif;
+    font-size: .8rem;
+    letter-spacing: 2px;
+    padding-top: .2rem;
+}
+.form input:focus, textarea:focus {
+    outline: none;
+}
+.name-mail {
+    display: flex;
+    justify-content: center;
+}
+.name-mail input {
+    width: 80%;
+}
+.name, .mail {
+    width: 33%;
+}
+.submit input{
+    font-family: 'Baskervville', serif;
+    font-weight: 600;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    color:#333;
+    transition: all .7s ease-in-out;
+}
+
+/*Breakpoint*/
+@media screen and (max-width: 768px) {
+    .form input, textarea, .name-mail div {
+        padding: .5rem;
+        width: 80%;
+    }
+    .name-mail {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .name, .mail {
+        margin: 0 auto;
+    }
+}
+@media screen and (min-width: 769px) and (max-width: 1280px) {
+    .form input, textarea, .name-mail div {
+        padding: .8rem;
+    }
+    .name-mail {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+    .name, .mail {
+        margin: 0 auto;
+        width: 80%;
+    }
+}
