@@ -210,7 +210,7 @@ header .logo-name {
 }
 .foot {
     display: grid;
-    grid-template-columns: 27% 27% 27% 19%;
+    grid-template-columns: repeat(5, 1fr);
     justify-content: space-between;
     margin: 50px;
     padding-top: 40px;
@@ -246,6 +246,10 @@ header .logo-name {
     padding-right: 15px;
     font-size: 1.5rem;
 }
+.foot .fa-whatsapp {color: #25d366;}
+.whatsapp legend {color: #075e54 !important;}
+.foot .fa-skype {color: #00aff0;}
+.skype legend {color: #00aff0 !important;}
 .icon .fa-linkedin {
     color: #0077b5;
 }
