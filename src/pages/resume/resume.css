@@ -353,8 +353,9 @@
     margin: 0 20px;
     box-shadow: 3px 3px 8px;
 }
-.btn:hover {
-    color: #777;
+.btn:hover {color: #777;}
+.social .a, .b {
+    padding-left: 4px;
 }
 
 /*Breakpoint*/
@@ -455,8 +456,10 @@
         width: 100%;
     }
     .foot {
-        display: block;
-        border-top: none;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        padding: 2rem 0;
+        margin: 1rem;
+        border: none;
     }
-    .phone, .email {margin-bottom: 20px ;}
 }
