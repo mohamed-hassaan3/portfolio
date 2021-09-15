@@ -108,6 +108,11 @@
     .name, .mail {
         margin: 0 auto;
     }
+    .foot {
+        margin: 1rem 0;
+        padding: 2rem 0;
+
+    }
 }
 @media screen and (min-width: 769px) and (max-width: 1280px) {
     .form input, textarea, .name-mail div {
