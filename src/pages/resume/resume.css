@@ -12,16 +12,14 @@
 .navigator .r {
     color: var(--resume-color)
 }
-.go-up .fa-arrow-up {
-    color: var(--content-color);
+.go-up .fa-angle-double-up {
+    color: #000;
 }
 .go-up {
     position: sticky;
     top: 40px;
     float: right;
     margin: 50px;
-    background-color: var(--resume-color);
-    border-radius: 50%;
     padding: 6px 8px;
     z-index: 99;
 }
@@ -248,7 +246,8 @@
 .certification-contain {
     display: flex;
     flex-wrap: wrap;
-    padding: 16px 0;
+    padding-top: 16px;
+    padding-bottom: 36px;
 }
 .cert-header {
     padding: 45px;
@@ -266,11 +265,19 @@
     display: flex;
     justify-content: space-evenly;
 }
-.slides {
-    flex: 25%;
-    height: auto;
-    padding: 12px;
-    text-align: center;
+/*bootstrap for certificate*/
+#carouselExampleControlsNoTouching {
+    width: 60%;
+    margin: auto;
+    position: relative;
+}
+.carousel-control-next-icon, .carousel-control-prev-icon {
+    background-color: #000;
+}
+.carousel-item .number{
+    position: absolute;
+    top: 3%;
+    left: 3%;
 }
 
 /*EMPLOYMENT HISTORY*/

@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../../css/reset.css">
     <link rel="stylesheet" href="../../icon/css/all.min.css">
     <link rel="stylesheet" href="./resume.css">
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
     <title>Resume-M'Hassaan</title>
 </head>
 <body>
@@ -71,7 +72,7 @@
             </div>
         </section>
         <div class="go-up">
-            <a href="#head" id="go-up"><span class="tooltip-text2">Go To Top</span><i class="fas fa-arrow-up"></i></a>
+            <a href="#head" id="go-up"><span class="tooltip-text2">Go To Top</span><i class="fas fa-angle-double-up"></i></i></a>
         </div>
         <section class="web-skills" id="web_skills">
             <div class="web-contain">
@@ -148,32 +149,53 @@
             </div>
             
             <div class="certification-contain">
-                <div class="slides">
-                    <a href="/src/img/personal-documents/HTML.png" target="_blank"><img src="/src/img/personal-documents/HTML.png" alt="HTML" width="100%"></a>
-                </div>
-                <div class="slides">
-                    <a href="/src/img/personal-documents/CSS.png" target="_blank"><img src="/src/img/personal-documents/CSS.png" alt="CSS" width="100%"></a>
-                </div>
-                <div class="slides">
-                    <a href="/src/img/personal-documents/javascript.png" target="_blank"><img src="/src/img/personal-documents/javascript.png" alt="JS" width="100%"></a>
-                </div>
-                <div class="slides">
-                    <a href="/src/img/personal-documents/bootstrap.png" target="_blank"><img src="/src/img/personal-documents/bootstrap.png" alt="bootstrap" width="100%"></a>
-                </div>
-                <div class="slides">
-                    <a href="/src/img/personal-documents/vue.png" target="_blank"><img src="/src/img/personal-documents/vue.png" alt="vue" width="100%"></a>
-                </div>
-                <div class="slides">
-                    <a href="/src/img/personal-documents/building interactive website js.png" target="_blank"><img src="/src/img/personal-documents/building interactive website js.png" alt="interactive website" width="100%"></a>
-                </div>
-                <div class="slides">
-                    <a href="/src/img/personal-documents/css-solo.png" target="_blank"><img src="/src/img/personal-documents/css-solo.png" alt="css" width="100%"></a>
-                </div>
-                <div class="slides">
-                    <a href="/src/img/personal-documents/html-solo.png" target="_blank"><img src="/src/img/personal-documents/html-solo.png" alt="HTML" width="100%"></a>
-                </div>
-                <div class="slides">
-                    <a href="../../img/personal-documents/1M.JPG" class="million" target="_blank"><img src="/src/img/personal-documents/1M.JPG" alt="1M" width="50%"></a>
+                <div id="carouselExampleControlsNoTouching" class="carousel slide" data-touch="false" data-interval="false">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="../../img/personal-documents/HTML.png" class="d-block w-100" alt="HTML">
+                        <span class="number">1/9</span>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="../../img/personal-documents/CSS.png" class="d-block w-100" alt="CSS">
+                        <span class="number">2/9</span>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="../../img/personal-documents/javascript.png" class="d-block w-100" alt="javascript">
+                        <span class="number">3/9</span>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="../../img/personal-documents/bootstrap.png" class="d-block w-100" alt="bootstrap">
+                        <span class="number">4/9</span>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="../../img/personal-documents/vue.png" class="d-block w-100" alt="vue.js">
+                        <span class="number">5/9</span>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="../../img/personal-documents/building interactive website js.png" class="d-block w-100" alt="building interactive website js">
+                        <span class="number">6/9</span>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="../../img/personal-documents/html-solo.png" class="d-block w-100" alt="html-solo">
+                        <span class="number">7/9</span>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="../../img/personal-documents/css-solo.png" class="d-block w-100" alt="css-solo">
+                        <span class="number">8/9</span>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="../../img/personal-documents/1M.JPG" class="d-block w-100" alt="1M">
+                        <span class="number">9/9</span>
+                      </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleControlsNoTouching" role="button" data-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleControlsNoTouching" role="button" data-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Next</span>
+                    </a>
                 </div>
             </div>
         </section>
@@ -262,7 +284,9 @@
             </div>
         </div>
     </footer>
-    
+    <script src="../../js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="/src/js/main.js"></script>
 </body>
 </html>
