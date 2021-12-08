@@ -1,6 +1,6 @@
 /*FIXED RESUME  header*/
 #download {position: fixed; z-index: 99;}
-#logo_name {margin-left: 30px; margin-top: 8px;}
+#logo_name {margin-left: 30px; margin-top: 8px; color: #000;}
 .logo-name {
     position: relative;
     display: inline-block;
@@ -265,7 +265,7 @@
     display: flex;
     justify-content: space-evenly;
 }
-/*bootstrap for certificate*/
+/*bootstrap for certificate images*/
 #carouselExampleControlsNoTouching {
     width: 60%;
     margin: auto;
