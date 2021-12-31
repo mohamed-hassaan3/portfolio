@@ -1,5 +1,5 @@
-#logo_name {margin-left: 30px; margin-top: 8px;}
-.download-file {margin-left: -30px;}
+#logo_name {margin-left: 30px; margin-top: -4px;}
+.download-file {margin-left: -30px; margin-top: -18px;}
 .navigator .c {
     color: var(--contact-color)
 }
@@ -9,6 +9,7 @@
     background-color: transparent;
     box-shadow: 1px 1px 8px #999;
     margin: 64px auto;
+    margin-top: 120px;
     text-align: center;
 }
 .contact h2 {
@@ -95,6 +96,29 @@
 
 /*Breakpoint*/
 @media screen and (max-width: 768px) {
+    .navigator .d {
+        display: block;
+        margin-top: 20px;
+    }
+    .navigator .r {
+        margin-top: 0;
+    }
+    .bar {
+        width: 1.5rem;
+        height: 3px;
+        background-color: #000;
+        margin: 4px 0;
+        transition: all .5s;
+    }
+    .change .bar1 {
+        transform: rotate(-405deg) translate(-6px, 4px);
+    }
+    .change .bar2 {
+        opacity: 0;
+    }
+    .change .bar3 {
+        transform: rotate(405deg) translate(-6px, -4px);
+    }
     .form input, textarea, .name-mail div {
         padding: .5rem;
         width: 80%;

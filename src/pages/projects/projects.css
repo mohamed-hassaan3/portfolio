@@ -1,5 +1,6 @@
+body {overflow-x: hidden;}
 /*Download RESUME*/
-#logo_name {margin-left: 30px; margin-top: 8px;}
+#logo_name {margin-left: 30px; margin-top: -4px;}
 
 .go-up {
     text-align: center;
@@ -26,13 +27,15 @@
      border-radius: 5px;
     width: 100px;
     visibility: hidden;
-    margin: 58px -80px;
+    margin: 68px 20px;
 }
 .download-file {
     margin-left: -30px;
+    margin-top: -18px;
 }
 .download-file:hover .tooltip-text1 {visibility: visible;}
 .navigator .p {color: var(--project-color)}
+
 
 /*PROJECTS*/
 .main-projects {
@@ -84,6 +87,8 @@
     justify-content: space-between;
     align-items: center;
     margin-bottom: 100px;
+    height: 80vh;
+    scroll-snap-align: start;
 }
 .title {
     width: 40%;
@@ -98,16 +103,53 @@
     font-size: 1.5rem;
     color: #003049;
     margin-bottom: 8px;
+    transform-origin: left;
+    transform: translateY(-100%);
+    opacity: 0;
+    transition: all .7s;
+    transition-delay: .3s;
+    opacity: 0;
 }
 .title p {
     margin-bottom: 12px;
+    transform-origin: left;
+    transform: translateX(-100%);
+    transition: all .7s;
+    opacity: 0;
+}
+.using-by {
+    transform-origin: left;
+    transform: translateY(100%);
+    transition: all .7s;
+    transition-delay: .3s;
+    opacity: 0;
+}
+.main-projects p.active {
+    transform: translateX(0);
+    opacity: 1;
+}
+.using-by.active {
+    transform: translateY(0);
+    opacity: 1;
+}
+.main-projects h2.active {
+    transform: translateY(0);
+    opacity: 1;
+}
+.main-projects .src {
+    transform: translateX(120%);
+    transition: all .7s;
+    opacity: 1;
+}
+.main-projects .src.active {
+    transform: translateX(0);
+    opacity: 1;
 }
 .live-site .fas, .live-site .fab,
 .title .key, .title span{
     background-color: transparent;
     padding: 8px 10px;
-    margin-right: 12px;
-    margin-top: 8px;
+    margin: 4px 6px;
     border-radius: 5px;
     border: 1px solid #eee;
     box-shadow: 8px 12px 6px #111;
@@ -141,14 +183,42 @@
 
 /*Breakpoint*/
 @media screen and (max-width: 768px) {
+    .map-box, .breaking-bad, .weather,
+.search, .clinic, .commerce, .ticket-box, .academy {
+    height: 70vh;
+}
     .api-projects div, .projects-container div{
         display: flex;
         flex-direction: column;
         justify-content: center;
     }
+    .navigator .d {
+        display: block;
+        margin-top: 20px;
+    }
+    .navigator .r {
+        margin-top: 0;
+    }
+    .bar {
+        width: 1.5rem;
+        height: 3px;
+        background-color: #000;
+        margin: 4px 0;
+        transition: all .5s;
+    }
+    .change .bar1 {
+        transform: rotate(-405deg) translate(-6px, 4px);
+    }
+    .change .bar2 {
+        opacity: 0;
+    }
+    .change .bar3 {
+        transform: rotate(405deg) translate(-6px, -4px);
+    }
     .main-projects {
         width: 100%;
         z-index: 9;
+        margin-top: 0;
     }
     .title {
         margin: 0;
@@ -159,13 +229,11 @@
         display: flex;
         flex-direction: row;
         align-items: center;
-        justify-content: space-between;
+        justify-content: center;
     }
     .title span, .title .using-by i, .using-by .key {
         box-shadow: none;
-    }
-    .logo .download-file {
-        display: none;
+        margin: 2px 4px;
     }
     .src{
         width: 100%;

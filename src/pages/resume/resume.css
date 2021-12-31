@@ -1,27 +1,14 @@
 /*FIXED RESUME  header*/
 #download {position: fixed; z-index: 99;}
-#logo_name {margin-left: 30px; margin-top: 8px; color: #000;}
-.logo-name {
-    position: relative;
-    display: inline-block;
-}
+#logo_name {margin-left: 30px; color: #000;}
+
 .download-file {
     margin-left: -30px;
+    margin-top: -8px;
 }
 /*TOOLTIPS BUTTON*/
 .navigator .r {
     color: var(--resume-color)
-}
-.go-up .fa-angle-double-up {
-    color: #000;
-}
-.go-up {
-    position: sticky;
-    top: 40px;
-    float: right;
-    margin: 50px;
-    padding: 6px 8px;
-    z-index: 99;
 }
 .tooltip-text {
     position: absolute;
@@ -35,7 +22,7 @@
     border-radius: 5px;
     width: 90px;
     visibility: hidden;
-    margin: 32px 52px;
+    margin: 52px 52px;
 }
 .tooltip-text1 {
     position: absolute;
@@ -46,10 +33,10 @@
     color: #777;
     text-align: center;
     font-size: .6rem;
-     border-radius: 5px;
+    border-radius: 5px;
     width: 100px;
     visibility: hidden;
-    margin: 58px -80px;
+    margin: 68px 20px;
 }
 .tooltip-text2 {
     position: absolute;
@@ -75,7 +62,10 @@
 
 /*TECHNICAL SKILLS SECTION*/
 .technical-contain {
-    background-image: linear-gradient(rgba(233, 223, 223, 0.6), rgba(233, 223, 223, .6)), url(/src/img/technical-skills.jpg);
+    background-image:
+    linear-gradient(rgba(233, 223, 223, 0.6),
+    rgba(233, 223, 223, .6)),
+    url(/src/img/technical-skills.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -91,6 +81,7 @@
     font-weight: 900;
     font-size: 7rem;
     color: var(--header-color);
+    padding: 20px 0;
 }
 .knowledge {
     text-align: center;
@@ -117,7 +108,7 @@
     margin-top: 15px;
     letter-spacing: 1px;
 }
-.range-html, .range-css, .range-js,
+.range-html, .range-css, .range-sass, .range-js,
  .range-vue, .range-bootstrap, .range-api {
     background-color: var(--range-color);
     height: 8px;
@@ -134,17 +125,15 @@
 }
 .range-html {width: 90%;}
 .range-css {width: 95%; }
+.range-sass {width: 90%; }
 .range-js {width: 80%;}
-.range-vue {width: 75%;}
+.range-vue {width: 65%;}
 .range-bootstrap {width: 85%;}
 .range-api {width: 85%;}
 
 /*web skills section*/
 .web-skills {
-    background-image: 
-    linear-gradient(rgba(233, 223, 223, 0.6),
-     rgba(233, 223, 223, .6)),
-      url(/src/img/web-skills.jpg);
+    background: hsla(208, 7%, 55%, 1);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -182,10 +171,7 @@
 }
 /*SKILLS FILED*/
 .field-skills{
-    background-image: 
-    linear-gradient(rgba(233, 223, 223, 0.6),
-     rgba(233, 223, 223, .6)),
-      url(/src/img/field-skills.jpg);
+    background: hsla(155, 23%, 71%, 1);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -233,10 +219,7 @@
 
 /*CERTIFICATION*/
 .certification {
-    background-image: 
-    linear-gradient(rgba(233, 223, 223, 0.6),
-     rgba(233, 223, 223, .6)),
-      url(/src/img/Certification.jpg);
+    background: hsla(52, 43%, 55%, 1);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -271,8 +254,15 @@
     margin: auto;
     position: relative;
 }
-.carousel-control-next-icon, .carousel-control-prev-icon {
+.carousel-control-color {
+    color: #000;
+}
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
     background-color: #000;
+}
+.carousel-control-prev {
+    color: #000;
 }
 .carousel-item .number{
     position: absolute;
@@ -397,6 +387,32 @@
         width: 100vw;
         overflow-x: hidden;
     }
+    .navigator .r {
+        margin-top: 0;
+    }
+    .navigator .d {
+        display: block;
+        margin-top: 20px;
+    }
+    .bar {
+        width: 1.5rem;
+        height: 3px;
+        background-color: #000;
+        margin: 4px 0;
+        transition: all .5s;
+    }
+    .change .bar1 {
+        transform: rotate(-405deg) translate(-6px, 4px);
+    }
+    .change .bar2 {
+        opacity: 0;
+    }
+    .change .bar3 {
+        transform: rotate(405deg) translate(-6px, -4px);
+    }
+    .resume-container {
+        margin-top: 0;
+    }
     .technical-contain h1,
     .web-skills h1,
     .technical-contain h3,
@@ -406,10 +422,6 @@
         text-decoration: underline;
         line-height: 2;
         font-weight: 900;
-    }
-    .logo-name {
-        position: absolute;
-        left: 0;
     }
     .range {margin: 0 auto;}
     .range span{
@@ -426,7 +438,6 @@
         text-align: start;
         margin: .8rem 0;
     }
-    .go-up {display: none;}
     .field-main {
         display: flex;
         flex-direction: column;
@@ -464,7 +475,7 @@
     }
     .foot {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
         padding: 2rem 0;
         margin: 1rem;
         border: none;
