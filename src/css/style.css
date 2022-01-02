@@ -128,8 +128,8 @@ header .logo-name {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
     width: 100%;
+    height: auto;
     margin-top: 100px;
 }
 .profile-image {

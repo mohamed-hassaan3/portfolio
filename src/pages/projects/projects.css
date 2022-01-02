@@ -245,7 +245,13 @@ body {overflow-x: hidden;}
     }
 }
 @media screen and (min-width: 769px) and (max-width: 1279px) {
-    h1 {font-size: 2.5rem;}
+    .projects-container {
+        overflow-x: hidden;
+    }
+    .download-file {
+        left: 12px;
+    }
+    h1 {font-size: 2.5rem; margin-top: 20px;}
     .content-about {font-size: 1rem;}
     .using-by span {margin: .5rem;}
     .using-by {
