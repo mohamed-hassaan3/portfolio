@@ -36,7 +36,6 @@ body {overflow-x: hidden;}
 .download-file:hover .tooltip-text1 {visibility: visible;}
 .navigator .p {color: var(--project-color)}
 
-
 /*PROJECTS*/
 .main-projects {
     background-image: linear-gradient(rgba(233, 223, 223, 0.7),
@@ -82,7 +81,7 @@ body {overflow-x: hidden;}
     border-top-right-radius: 25px;
 }
 .map-box, .breaking-bad, .weather,
-.search, .clinic, .commerce, .ticket-box, .academy {
+.search, .vehicles, .commerce, .ticket-box, .academy, .iMac, .todo {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -183,8 +182,8 @@ body {overflow-x: hidden;}
 
 /*Breakpoint*/
 @media screen and (max-width: 768px) {
-    .map-box, .breaking-bad, .weather,
-.search, .clinic, .commerce, .ticket-box, .academy {
+.map-box, .breaking-bad, .weather,
+.search, .vehicles, .commerce, .ticket-box, .academy, .iMac, .todo {
     height: 70vh;
 }
     .api-projects div, .projects-container div{
@@ -260,5 +259,8 @@ body {overflow-x: hidden;}
     }
     .logo {
         margin-left: -18px;
+    }
+    .api-head h3, .html-css-head h3, .vue-head h3 {
+        margin-left: 60px;
     }
 }

@@ -1,3 +1,10 @@
+// LOADER
+const loader = document.querySelector('.loader')
+window.addEventListener('load', () => {
+  loader.style.display = "none"
+})
+
+
 //Toggle Menu List
 const menu = document.querySelector('#menu-bar');
 const navigator = document.querySelector('#navigator');
