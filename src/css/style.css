@@ -254,7 +254,7 @@ header .logo-name {
     background-color: var(--contact-color);
 }
 .info li:active {
-    transform: scale(.6);
+    transform: scale(.8);
 }
 .info .resume:focus {
     background-color: var(--resume-color);
