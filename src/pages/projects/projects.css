@@ -229,7 +229,11 @@ body {overflow-x: hidden;}
         display: flex;
         flex-direction: row;
         align-items: center;
-        justify-content: center;
+        justify-content:flex-start;
+        flex-wrap: wrap;
+    }
+    .using-by span {
+        padding: 3px 6px;
     }
     .title span, .title .using-by i, .using-by .key {
         box-shadow: none;
