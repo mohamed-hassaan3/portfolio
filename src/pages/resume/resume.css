@@ -131,6 +131,7 @@
 .range-sass,
 .range-js,
 .range-react,
+.range-next,
 .range-vue,
 .range-bootstrap,
 .range-api {
@@ -156,6 +157,10 @@
 
 .range-css {
     width: 95%;
+}
+
+.range-next {
+    width: 85%;
 }
 
 .range-sass {
