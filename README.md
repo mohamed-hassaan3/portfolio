@@ -1,4 +1,1 @@
-<div align="center"> 
-  <p>Visitor count</p>
-  <img src="https://profile-counter.glitch.me/mohamed-hassaan3/count.svg" alt="Visitor's Count" />
-</div>
+<img src="https://github.com/mohamed-hassaan3/mohamed-hassaan3/blob/main/sb-blog-programming (1)" alt="Banner of a developer sitting in front of a desk">
